@@ -1,11 +1,12 @@
 import './App.css';
 import SearchBar from './Pages/home/SearchBar'
+import Cards from './Components/Cards';
 
 function App() {
   return (
     <div className="App">
-      <h1>Primer app</h1>
       <SearchBar />
+      <Cards />
     </div>
   );
 }

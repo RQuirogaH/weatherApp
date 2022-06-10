@@ -3,6 +3,7 @@ import { GET_CITY } from './actions';
 
 const initialState = {
     city: [],
+    cities: [],
     favCities: []
 }
 
@@ -11,7 +12,7 @@ function reducer(state = initialState, action) {
         case GET_CITY:
             return {
                 ...state,
-                city: action.payload
+                cities: [...state.cities, action.payload]
             }
 
         default:

@@ -2,12 +2,16 @@ import React from "react";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { getCity } from "../../Redux/actions";
+import lupa from '../../Assets/Images/lupa.png'
+
+import s from './SearchBar.module.css'
 
 const SearchBar = (props) => {
 
     const dispatch = useDispatch();
 
     const [input, setInput] = useState('')
+    const [search, setSearch] = useState(false)
 
     const handleChange = (e) => {
         setInput(
@@ -19,14 +23,25 @@ const SearchBar = (props) => {
         e.preventDefault();
         dispatch(getCity(input))
         setInput('');
+        setSearch(!search);
+    }
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        setSearch(!search)
     }
 
     return(
-        <div>
-            <form onSubmit={handleSubmit}>
-                <input type="text" placeholder="search location" value={input} onChange={handleChange}/>
-                <button type="submit">Search</button>
-            </form>
+        <div className={s.navBar}>
+            <p>Weather App</p>
+            
+                {search ?   <div>
+                                <form onSubmit={handleSubmit} className={s.buscador}>
+                                    <input type="text" placeholder="search location" value={input} onChange={handleChange} className={s.input}/>
+                                    <button type="submit" className={s.boton}><img src={lupa} alt="" className={s.img}/></button>
+                                </form>
+                            </div>
+                    :<button type="submit" className={`${s.boton} ${s.buscador}`}><img src={lupa} alt="" className={s.img} onClick={handleClick}/></button>}
         </div>
     )
 }
