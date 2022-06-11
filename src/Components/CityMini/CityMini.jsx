@@ -1,5 +1,5 @@
 import React from "react";
-import s from './CardCity.module.css';
+import s from './CityMini.module.css';
 
 
 const CardCity = (props) => {

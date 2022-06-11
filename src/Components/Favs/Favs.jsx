@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import CardCity from "./CardCity";
-import s from './Cards.module.css';
+import CityMini from '../CityMini/CityMini.jsx';
+import s from './Favs.module.css';
 
 
 const Cards = () => {
@@ -9,7 +9,10 @@ const Cards = () => {
 
     return(
         <div className={s.container}>
-            {cities?.map(c => <CardCity
+            Aqui van las ciudades favoritas
+            <br/>
+            Aún no funciona xD
+            {cities?.map(c => <CityMini
                 key = {c.id}
                 name= {c.name}
                 id = {c.id}

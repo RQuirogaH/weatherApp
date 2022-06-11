@@ -1,12 +1,16 @@
 import './App.css';
-import SearchBar from './Pages/home/SearchBar'
-import Cards from './Components/Cards';
+import NavBar from './Components/NavBar/NavBar.jsx';
+import Favs from './Components/Favs/Favs.jsx';
+import CityMain from './Components/CityMain/CityMain';
 
 function App() {
   return (
     <div className="App">
-      <SearchBar />
-      <Cards />
+      <NavBar />
+      <div className='body'>
+        <CityMain />
+        <Favs />
+      </div>
     </div>
   );
 }

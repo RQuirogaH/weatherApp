@@ -1,14 +1,4 @@
-.navBar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    margin-bottom: 10px;
-    margin: 0px 0px 30px 0px;
-    color: #E7E7EB;
-    font-size: 15px;
-    background-color: #1E213A;
-}
+@import '../vars.css';
 
 .img {
     width: 20px;
@@ -24,7 +14,7 @@
 }
 
 .buscador{
-    border: 0.5px #E7E7EB solid;
+    border: 0.5px var(--text) solid;
     border-radius: 10px;
     padding: 10px;
     display: flex;
@@ -34,6 +24,6 @@
 .input {
     background-color: transparent;
     border: none;
-    color: #E7E7EB;
+    color: var(--text);
     outline: none;
 }

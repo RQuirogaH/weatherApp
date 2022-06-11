@@ -1,9 +1,10 @@
+@import '../vars.css';
+
 .container {
-    background-color: #1E213A;
-    border: 1px solid rgba(0, 0, 0, 0.473);
+    background-color: var(--alt);
     border-radius: 5px;
     width: 200px;
-    color: #E7E7EB;
+    color: var(--text);
     
 }
 
