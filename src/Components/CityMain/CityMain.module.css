@@ -5,6 +5,41 @@
     border-radius: 10px;
     border: none;
     color: var(--text);
-    width: 70%;
+    width: 35%;
     margin-right: 20px;
+    padding: 0px;
+    font-size: 22px;
+}
+
+.bg_image{
+    position: relative;
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg_image::before{
+    content: '';
+    background-image: url('../../Assets//Images/Cloud-background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0.1;
+}
+
+.icon{
+    position: relative;
+    width: 200px;
+}
+
+
+span {
+    font-size: 100px;
 }

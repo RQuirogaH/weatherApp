@@ -8,6 +8,7 @@ const NavBar = () => {
         <div className={s.navBar}>
             <h3>Weather App</h3>
             <SearchBar />
+            <p>App details</p>
         </div>
     )
 }

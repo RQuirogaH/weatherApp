@@ -4,11 +4,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    margin-bottom: 10px;
-    margin: 0px 0px 30px 0px;
-    color: var(--text);
-    font-size: 15px;
+
+    padding: 10px 30px;
+    margin: 0px 0px 20px 0px;
+
     background-color: var(--alt);
     border-radius: 10px;
+    color: var(--text);
+}
+
+p {
+    font-size: 15px;
 }
