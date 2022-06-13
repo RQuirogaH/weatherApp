@@ -5,8 +5,8 @@
     border-radius: 10px;
     border: none;
     color: var(--text);
-    width: 35%;
-    margin-right: 20px;
+    width: 30%;
+    margin: 0px;
     padding: 0px;
     font-size: 22px;
 }
@@ -18,6 +18,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin: 0px;
 }
 
 .bg_image::before{
@@ -39,7 +41,50 @@
     width: 200px;
 }
 
+p {
+    color: var(--text_alt);
+    font-size: 15px;
+    margin: 0px;
+    padding: 15px;
+}   
 
 span {
+    margin-top: 0px;
+    color: var(--text);
     font-size: 100px;
+    height: 130px;
+    
+}
+
+.temp {
+    height: 100px;
+    color: var(--text);
+    font-size: 40px;
+
+}
+
+.feelsLike{
+    padding-top: 0px;
+}
+
+.weatherD{
+    padding: 25px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.fecha{
+    padding: 15px;
+}
+
+.location{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.locationIMG {
+    height: 15px;
+    margin-right: 5px;
 }

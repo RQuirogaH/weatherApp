@@ -5,12 +5,8 @@ import CityMain from './Components/CityMain/CityMain';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <div className='body'>
-        <CityMain />
-        <Favs />
-      </div>
+    <div className='body'>
+      <CityMain />
     </div>
   );
 }

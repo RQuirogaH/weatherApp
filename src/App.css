@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 .App {
-  text-align: center;
+
 }
 
 .body {
   display: flex; 
   justify-content: space-between;
+  text-align: center;
 }
 
 body{

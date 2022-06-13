@@ -17,12 +17,16 @@
 }
 
 .input {
+
+    box-sizing: border-box;
+    width: 150px;
+    margin: 0px;
+    margin-left: 7px;
+
     background-color: transparent;
     border: none;
     color: var(--text);
     outline: none;
-    margin: 0px;
-    margin-left: 7px;
 
     font-size: 15px;
 }
