@@ -1,0 +1,91 @@
+@import '../vars.css';
+
+.container {
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    color: var(--text);
+}
+
+.container h3 {
+    padding: 15px;
+    margin: 0px;
+    display: flex;
+    justify-self: left;
+}
+
+.details{
+    height: min-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.details span {
+    margin-top: 0px;
+    font-size: 60px;
+    height: 130px;
+}
+
+.details p{
+    margin: 0px;
+    padding: 0px;
+}
+
+.details > div{
+    background-color: var(--alt);
+    width: 300px;
+    margin: 15px;
+    padding: 20px;
+}
+
+p:first-child{
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--text);
+}
+
+.data {
+    font-size: 25px;
+}
+
+.bar {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.progBorder {
+    background-color: var(--text); 
+    height: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.progCont{
+    background-color: #FFEC65;
+    height: 10px;
+    border-radius: 5px;
+    width: 20%;
+}
+
+.values{
+    margin: 0;
+    padding: 0px;
+    padding-bottom: 2px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.percent{
+    margin: 0;
+    padding: 0px;
+    padding-top: 2px;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navIcon img{
+    width: 30px;
+}

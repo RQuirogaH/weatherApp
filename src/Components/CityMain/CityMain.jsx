@@ -22,28 +22,28 @@ const CityMain = (props) => {
     if(city.id){
         getDateDatails();
         return (
-                <div className={s.container} key={city.id}>
-                    <SearchBar/>
-                    <div className={s.bg_image}>
-                        <img src={require(`../../Assets/Images/${city.weather[0].icon}.png`)} alt="" className={s.icon}/>
-                    </div>
-                    <p className={s.temp}>
-                        <span>{Math.round(city.main.temp)}</span> °C
-                    </p>
-                    <p className={s.feelsLike}>
-                        Feels like: {Math.round(city.main.feels_like)}° 
-                    </p>
-                    <p className={s.weatherD}>
-                        {city.weather[0].main}
-                    </p>
-                    <p className={s.fecha}>
-                        {fecha.current}
-                    </p>
-                    <p className={s.location}>
-                        <img src={require('../../Assets/Images/location.png')} alt="" className={s.locationIMG}/>
-                        {city.name}
-                    </p>                
+            <div className={s.container} key={city.id}>
+                <SearchBar/>
+                <div className={s.bg_image}>
+                    <img src={require(`../../Assets/Images/${city.weather[0].icon}.png`)} alt="" className={s.icon}/>
                 </div>
+                <p className={s.temp}>
+                    <span>{Math.round(city.main.temp)}</span>°C
+                </p>
+                <p className={s.feelsLike}>
+                    Feels like: {Math.round(city.main.feels_like)}° 
+                </p>
+                <p className={s.weatherD}>
+                    {city.weather[0].main}
+                </p>
+                <p className={s.fecha}>
+                    {fecha.current}
+                </p>
+                <p className={s.location}>
+                    <img src={require('../../Assets/Images/location.png')} alt="" className={s.locationIMG}/>
+                    {city.name}
+                </p>                
+            </div>
         )
     }
 

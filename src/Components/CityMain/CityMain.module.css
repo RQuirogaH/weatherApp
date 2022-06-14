@@ -4,16 +4,20 @@
     background-color: var(--alt);
     border-radius: 10px;
     border: none;
-    color: var(--text);
+    color: var(--text_alt);
     width: 30%;
     margin: 0px;
     padding: 0px;
-    font-size: 22px;
+    font-size: 15px;
+}
+
+.container p {
+    margin: 0px;
 }
 
 .bg_image{
     position: relative;
-    height: 400px;
+    height: 300px;
 
     display: flex;
     justify-content: center;
@@ -41,34 +45,28 @@
     width: 200px;
 }
 
-p {
-    color: var(--text_alt);
-    font-size: 15px;
-    margin: 0px;
-    padding: 15px;
-}   
+.temp {
+    height: 70px;
+    line-height: 55px;
+    padding-top: 10px;
+    color: var(--text);
+    font-size: 40px;
+}
 
-span {
+.temp > span {
     margin-top: 0px;
     color: var(--text);
     font-size: 100px;
     height: 130px;
-    
-}
-
-.temp {
-    height: 100px;
-    color: var(--text);
-    font-size: 40px;
-
 }
 
 .feelsLike{
-    padding-top: 0px;
+    padding: 15px;
+    padding-top: 10px;
 }
 
 .weatherD{
-    padding: 25px;
+    padding: 20px;
     font-size: 25px;
     font-weight: 500;
 }
